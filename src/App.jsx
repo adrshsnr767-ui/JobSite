@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Hero from './Components/Hero'
 import Nav from './Components/Nav'
 import FIndU from './Components/FIndU'
+import FeaturedJob from './Components/FeaturedJob'
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <Nav/>
     <Hero/>
     <FIndU/>
+    <FeaturedJob/>
      
     </>
   )

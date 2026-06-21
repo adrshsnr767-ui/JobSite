@@ -7,7 +7,7 @@ import Persons from '../assets/review.png';
 const Hero = () => {
     return (
         <>
-            <div>
+            <div className=' font-["Jost"]'>
                 <div className=' w-full h-auto bg-cover overflow-hidden pb-5 md:pb-10 lg:pb-[5rem]'
                     style={{ backgroundImage: `url(${Background})` }}>
 
