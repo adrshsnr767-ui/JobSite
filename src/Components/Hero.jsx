@@ -8,14 +8,15 @@ const Hero = () => {
     return (
         <>
             <div>
-                <div className=' w-full h-[120vh] bg-cover overflow-hidden'
+                <div className=' w-full h-auto bg-cover overflow-hidden pb-5 md:pb-10 lg:pb-[5rem]'
                     style={{ backgroundImage: `url(${Background})` }}>
 
 
 
 
 
-                    <header className=' w-full h-[15vh] max-w-[1500px] mx-auto px-[6rem]   items-center flex  hidden xl:block xl:flex gap-29 font-light'>
+                    <header className=' w-full h-auto md:h-[15vh] max-w-[1500px] mx-auto px-[6rem]   items-center flex   gap-29 font-light
+                   hidden xl:block xl:flex '>
 
                         <div className=' cursor-pointer'>
                             <img src={Logo} alt="logo" className=' w-[145px]' />
@@ -60,12 +61,12 @@ const Hero = () => {
 
 
 
-                    <div className=' w-[100%] h-[105vh]  max-w-[1500px] mx-auto px-[6rem] mt-[5rem] flex relative z-50 '>
+                    <div className=' w-[100%] h-auto max-w-[1500px] mx-auto px-[1rem] lg:px-[6rem] lg:mt-[5rem] flex relative z-50 '>
 
-                        <div className=' mt-[7rem] w-[80%] flex flex-col gap-10'>
-                            <h1 className=' text-[white] text-5xl font-semibold w-[80%] leading-14'>
+                        <div className=' w-full mt-[1rem] md:mt-[7rem]  flex flex-col gap-5  md:gap-10'>
+                            <h1 className=' text-[white] text-3xl md:text-5xl font-semibold w-[80vw] md:w-[80%] leading-14'>
                                 Find Your Perfect Job
-                                Match
+                               Match
                             </h1>
 
                             <p className=' text-[white]'>
@@ -75,30 +76,36 @@ const Hero = () => {
                             <div>
 
 
-                                <div className=' h-[95px] w-full bg-[white] rounded-[10px] '>
-                                    <div className=' py-2 flex'>
+                                <div className='h-auto  w-full bg-[white] rounded-[10px] p-4  md:p-0
+                                md:w-auto md:h-[95px]'>
+                                    <div className=' gap-6  h-auto py-2 flex flex-col 
+                                    md:flex-row md:gap-0'>
 
 
-                                        <div className='  w-[45%] flex  items-center flex-1  pl-4'>
+                                        <div className='  flex  items-center  pl-4 
+                                        md:flex-1  md:w-[45%]'>
                                             <i className="ri-search-line text-2xl  text-[#666666] " ></i>  <input type='text' className=' flex-1 min-w-0 outline-none px-2' placeholder='Job title, keywords...' />
 
                                         </div>
 
-                                        <div className=' border-l border-[#e8e8e8] py-10 flex-shrink-0 '>
+                                        <div className=' hidden  border-l border-[#e8e8e8] py-10 flex-shrink-0 
+                                        md:block'>
 
 
 
                                         </div>
 
 
-                                        <div className='  w-[30%] flex items-center pl-4'>
+                                        <div className='   flex items-center pl-4
+                                        md:w-[30%]'>
 
                                             <i className="ri-map-pin-line text-[1.4em]   text-[#666666]"></i><input type="text" className=' flex-1 min-w-0 outline-none px-2' placeholder='Job TItle, Keywords... ' />
                                         </div>
 
 
-                                        <div className=' w-[25%] flex justify-center items-center '>
-                                            <div className=' w-[140px] h-[55px] border rounded-[10px] text-[16px] flex  items-center justify-center bg-[#F9AB00] text-[white] hover:bg-[white] hover:text-[#F9AB00]  cursor-pointer transition-all duration-300 cursor-pointer'>
+                                        <div className='  flex justify-center items-center
+                                        md:w-[25%] '>
+                                            <div className='w-[100%] md:w-[140px] h-[55px] border rounded-[10px] text-[16px] flex  items-center justify-center bg-[#F9AB00] text-[white] hover:bg-[white] hover:text-[#F9AB00]  cursor-pointer transition-all duration-300 cursor-pointer'>
                                                 Find Jobs
                                             </div>
                                         </div>
@@ -118,14 +125,19 @@ const Hero = () => {
                                     Popular Searches :  Designer,  Developer,  Web,  IOS, PHP,  Senior Engineer</h4>
                             </div>
 
-<div className=' mt-[6rem] flex justify-between items-center cursor-pointer'>
-<div>
-    <img src={Persons} alt="" />
-</div>
-<div className=' text-[white] flex gap-2 items-center'>
-    <i class="ri-file-upload-line text-2xl"></i>  <span>Upload Your CV</span>
-</div>
-</div>
+                            <div className=' mt-[1rem] xl:mt-[6rem] flex flex-col gap-3 md:flex-row justify-between items-center cursor-pointer'>
+                                <div>
+                                    <img src={Persons} alt="" />
+                                </div>
+                                <div className=' text-[white] flex flex-col  Unline-box' >
+                                    <div className=' flex items-center gap-1'>
+                                        <i class="ri-file-upload-line text-2xl"></i>  <span>Upload Your CV</span>
+                                    </div>
+                                    <span className='Main-unline'>
+
+                                    </span>
+                                </div>
+                            </div>
 
 
 
@@ -133,9 +145,9 @@ const Hero = () => {
 
                         </div>
 
-                        <div className=' relative  W-[30%] left-35'>
+                        <div className=' relative  left-35'>
 
-                            <img src={Man} alt="man" className=' w-[950px] relative   ' />
+                            <img src={Man} alt="man" className=' min-w-[650px] relative hidden xl:block   ' />
                         </div>
 
 
